@@ -286,6 +286,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8141c778c1f8ddf46b6ee47d80716e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xAngle: 0
+  yAngle: 1.16
+  zAngle: -3.15
+  cube: {fileID: 1107424446}
 --- !u!65 &1107424448
 BoxCollider:
   m_ObjectHideFlags: 0
