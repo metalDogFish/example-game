@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-          
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-   <!-- <link rel="stylesheet" href="style.css"> -->
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-   
-</head>
-<body>
-    <header>
-        <h1 style ="background-color:grey;">MetalDogFish</h1>
-        <p>Game testing in progress..</p>
-    </header>
-
-          <section>
-           <div id="sketch-container"></div> 
-          </section>
-          <!-- <script src="builds/index.html"></script> 
-          //unity build using an .html file, so link redirects to that page. -->
-          <footer>
-          
-                    <div>   
-          <a href="builds/index.html">
-           <p style="color:grey;"> VIEW GAME BUILD</p>
-          </a>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ExampleGameProj</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/builds.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">ExampleGameProj</div>
+      </div>
     </div>
-          </footer>
-</body>
+  </body>
 </html>
